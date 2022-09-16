@@ -1,0 +1,537 @@
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ 
+a:hover {
+    color: var(--primary-color) !important;
+    font-weight: bolder;
+  }
+
+ul ol{
+    margin: 0;
+    padding: 0;
+}
+
+
+ /*===== Variable Define =====*/
+:root {
+    --primary-color: #f87d20;
+    --secondry-color: #00a149;
+    --white-color: #fff;
+    --text-color: #b88b6f;
+    --black-color: #000000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondry-font: 'Quicksand', sans-serif;
+
+    --text-primary:#f87d20;
+    --text-secondary:#00a149;
+    --text-white:#fff;
+    --text-black: #000000;
+    --text-gray: #b0b0b0;
+  } 
+
+/* ----------------------- */
+/* custome css 1 */
+/* ---------------------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+    font-weight:400;
+}
+
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+
+
+::-webkit-scrollbar-track{
+    background-color: (var(--white-color));
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+h1{
+  font-size: 27px;
+  font-weight: bolder;
+   margin-bottom: 10px;
+  padding: 10px 10px; 
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+
+
+h2{
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px 10px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+
+ }
+ 
+ p{
+  font-size: 1rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+ }
+
+
+
+
+.main-btn{
+    display: inline-block;
+    text-transform: capitalize;
+    color: var(--black-color);
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    font-weight: 900;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all ease-out 0.6s;   
+
+}
+
+.main-btn:hover{
+ background: transparent;   
+ color: var(--white-color);
+}
+
+
+.wrapper{
+padding-top: 6.25rem;
+padding-bottom: 6.25rem;
+}   
+
+.text-content{
+    margin: 0 auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+color: var(--primary-color);
+}
+
+
+
+
+/* -------------------------
+-------------------------
+2. Navigation part 
+-------------------------
+------------------------- */
+
+
+.navigation-wrap{
+
+    position: fixed;
+    width: 100%;
+    transition: all 0.4 ease-in-out;
+    -webkit-transition:all 0.4 ease-in-out ;    
+    z-index: 1000;
+}
+
+
+.navigation-wrap .nav-item{
+    padding:0 0.625rem;
+    transition:all 0.3s linear;
+  } 
+
+  
+  .navbar-toggler:focus{
+    outline:unset;
+    border:unset;
+    box-shadow: none;
+  }
+  .nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:var(--white-color);
+    letter-spacing:1px;
+  }
+  .nav-link:hover,
+  .nav-link.active{
+    color:var(--primary-color) !important;
+  }
+  .navigation-wrap .main-btn{
+    padding:0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left:0.625rem;
+  }
+
+
+
+
+/* 
+  .top-banner{
+    width:100%;
+    /* background:url('../Image/video.mp4') no-repeat; */
+    background-position: center center;
+    /* background-size: cover; */
+ 
+    padding: 22.875rem 0 14.375rem;
+    background-position: center right 364px;
+
+    
+  /* } */
+  .top-banner p{
+    color:var(--black-color );
+  }
+
+
+
+ 
+
+
+.about-section{
+  background: url(../Image/pexels-cottonbro-6840080.jpg ) no-repeat ;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+/*
+==========================================
+  our-menu Design
+==========================================
+*/
+.our-menu .card{
+  border:none;
+}
+.our-menu .link_category_product{
+  position:relative;
+  display:block;
+  z-index:1;
+} 
+.our-menu .link_category_product::before{
+  position:absolute;
+ 
+  top:50%;
+  left:50%;
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  border:2px dotted var(--secondry-color);
+  z-index:-1;
+  
+ 
+  transition:all .4s ease;
+}
+
+
+.our-menu .cat-title a{
+  text-align: center;
+  font-size: 0.8125rem;
+  position:relative;
+  display:inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:var(--black-color);
+}
+.card:hover .cat-title a{
+  color:var(--primary-color);
+}
+
+
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+
+  .overlay{
+    margin-top: 55vh;
+  }
+
+  .our-menu .underline span {
+    color: var(--black-color);
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+
+  
+ .our-menu .underline span::before,
+ .our-menu .underline span::after {
+  content: '';
+        position: absolute;
+        height: 3px;
+        width: 30%;
+        background: var(--primary-color);
+        left: -84px;
+        bottom: 18px;
+}
+
+ .our-menu .underline span::after {
+  bottom: 9px;
+  width: 38%;
+  transform: translateX(-50%);
+  left: 1%;
+}
+
+.img-fluid{
+
+  height: 192px;
+}
+
+
+
+.btn-primary {
+  color: #31344b;
+  background-color: #e6e7ee;
+}
+.btn {
+  position: relative;
+  transition: all .2s ease;
+  letter-spacing: .025em;
+  font-size: 1rem;
+  border-color: #d1d9e6;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}
+
+
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0.0625rem solid transparent;
+  padding: 0.55rem 0.95rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.55rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+  /*
+==========================================
+ testimonial section Design
+==========================================
+*/
+/* .testimonial-section{
+  background: url(../Image/pexels-cottonbro-6840080.jpg ) no-repeat ;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.testimonial-section h2{
+  color:var(--white-color);
+}
+
+.testimonial-section .carousel-item{
+  margin-top:3rem;
+  padding:10rem 3.125rem;
+  background-color:var(--primary-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+
+
+
+.testimonial-section .carousel-caption img{
+  max-width: 5rem;
+  border-radius: 50%;
+  padding:0.3125rem;
+} 
+.testimonial-section .carousel-caption p{
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: 300;
+  color:var(--white-color);
+  padding:0 11% 0.625rem;
+}
+.testimonial-section .carousel-indicators{
+  bottom:-2.8125rem;
+}
+.testimonial-section .carousel-indicators button{
+  width:15px;
+  height:15px;
+  outline:none;
+  border-radius: 50%;
+  border: none;
+  margin-right:1rem;
+  opacity:0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+  opacity:1;
+}
+
+
+/*
+==========================================
+footer section Design
+==========================================
+*/
+.footer{
+  background: var(--black-color);
+} 
+.footer .footer-social a i{
+  font-size: 1.5rem;
+  color:var(--white-color);
+  padding:0 1rem;
+}
+.footer .footer-social a:hover i{
+  color:var(--primary-color);
+}
+ 
+
+/* Form Control */
+.newsletter .form-control{
+  height:3.225rem;
+  padding:0 1.25rem;
+  font-size: 0.875rem;
+  width:100%;
+  border-radius: 0;
+  background:transparent;
+  border:0.1875rem solid var(--white-color);
+  color:var(--black-color);
+  font-weight: 700;
+}
+.newsletter .main-btn{
+  height:3.225rem;
+  padding:0 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+  background-color: var(--white-color);
+  border:0.1875rem solid var(--white-color);
+  color:var(--black-color);
+  font-weight: 700;
+}
+.newsletter:hover .form-control{
+  border:0.1875rem solid var(--primary-color);
+  color:var(--black-color);
+}
+.newsletter:hover .main-btn{
+ background:var(--primary-color); 
+ border:0.1875rem solid var(--primary-color);
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+  outline:none;
+  box-shadow: none;
+  border-color:var(--primary-color);
+}
+
+<!--Responsive Design-->
+@media (max-width: 991px) {
+
+    /*custom classes  */ 
+    .text-content{
+        width:100%;
+    }
+
+    /* navbar brand */ 
+    .navigation-wrap .navbar-brand img{
+        height:3.8125rem
+    }
+    .navigation-wrap{
+        text-align: center;
+        background-color: var(--white-color);
+    }
+    .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+        color:var(--black-color);
+    }
+
+    /* Banner Design */ 
+    .top-banner{
+        padding:9.375rem 0 9.375rem;
+    }
+
+    /* carousel design */ 
+    .testimonial-section .carousel-caption p{
+        padding:0;
+    }
+
+    /* footer link */ 
+    .footer .footer-social a i{
+        padding:0 0.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* custom css */
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        line-height: 28px;
+    }
+
+    /* top banner */ 
+    .top-banner{
+        padding:10.375rem 0 9.375rem;
+    }
+
+    /* carousel design */ 
+    .testimonial-section .carousel-item{
+        padding:11rem 3.125rem;
+    }
+}
